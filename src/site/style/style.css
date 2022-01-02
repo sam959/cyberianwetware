@@ -1,0 +1,146 @@
+html {
+    background-color: #333;
+
+}
+
+body {
+    text-align: center;
+    color: rgba(2, 34, 243, 0.18);
+    font-family: "Share Tech Mono", serif;
+    font-size: 48px;
+    font-weight: bold;
+    background-size: contain;
+    background-image: url('https://media1.giphy.com/media/YRcXl6VfNhCorklI0R/giphy.gif');
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+
+p.footer-note {
+    backdrop-filter: invert(.7);
+    font-weight: normal;
+    font-style: italic;
+    font-smoothing: antialiased;
+    overflow: hidden;
+    text-align: center;
+    background-image: -webkit-linear-gradient(92deg, #cc5500, #ccbb00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 30s infinite linear;
+}
+
+.subtitle {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: normal;
+    font-size: 75%;
+    font-smoothing: antialiased;
+    width: 100%;
+}
+
+.subtitle span::before {
+    content: "";
+    color: darkred;
+    text-shadow: 1px 1px rgba(255, 255, 153, 0.5), 0 0 25px crimson, 0 0 5px red;
+    -webkit-animation: transmission 5s infinite;
+}
+
+@keyframes transmission {
+    0% {
+        content: "transmission ";
+    }
+    25% {
+        content: "transmission incoming";
+    }
+    50% {
+        content: "transmission incoming.";
+    }
+    75% {
+        content: "transmission incoming..";
+    }
+    100% {
+        content: "transmission incoming...";
+    }
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(-360deg);
+    }
+}
+
+.codpen {
+    height: 400px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: flex-start;
+    border: 200px solid;
+    margin: 1em 0;
+    padding: 100em;
+}
+
+.homepage {
+    display: flex;
+    border: 10px solid white;
+    flex-direction: column;
+}
+
+.upper-container {
+    display: flex;
+    flex: available;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 20px solid rebeccapurple;
+}
+
+.bottom-container {
+    display: flex;
+    flex: 50%;
+    flex-direction: row;
+    border: 10px solid cyan;
+}
+
+.bottom-flex-child {
+    flex: 50%;
+    align-self: center;
+    align-items: stretch;
+    border: 20px solid #d99769;
+}
+
+.bottom-flex-child-col {
+    flex: 10%;
+    flex-direction: column;
+    border: 20px solid #69d97f;
+}
+
+.bottom-insta {
+    flex: 50%;
+    align-self: end;
+    border: 20px solid #4b8f79;
+}
+
+.bottom-flex-child:first-child {
+    margin-right: 20px;
+}
+
+
+.footer_container {
+    flex: 10%;
+    flex-wrap: wrap;
+    border: 15px solid yellow;
+}
+
+.upper-flex-child-subtitle {
+    flex: 50%;
+    flex-wrap: wrap;
+    border: 15px solid darkred;
+
+}
+
+.uppwe-flex-child:first-child {
+    margin-right: 20px;
+
+}
