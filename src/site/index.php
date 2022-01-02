@@ -24,12 +24,12 @@
 
 <section class="header">
     <nav>
-        <img class="logo" style="fill: #69d97f" src="images/logo.png" alt="Site's logo"/>
+        <img class="logo" src="images/logo.png" alt="Site's logo"/>
         <ul>
             <li class="todo">//todo:</li>
-            <li>About me</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li><a href="#about-me-anchor">What it this?</a></li>
+            <li><a href="#projects-anchor"> Projects</a></li>
+            <li><a href="#contact-me">Contacts</a></li>
         </ul>
     </nav>
     <div class="header-area">
@@ -59,6 +59,7 @@
         </div>
     </div>
 </section>
+
 <section>
     <div class="subtitle-container">
         <div class="subtitle">
@@ -79,7 +80,7 @@
 
     </div>
 </div>
-<section class="info_section">
+<section class="info_section" id="about-me-anchor">
     <div class="info-content">
         <h2>What is cyberianwetware?</h2>
         <p>A space where to observe how machines feel whenever it's raining outside</p>
@@ -223,7 +224,7 @@
     </div>
 </section>
 <section class="info_section_alt">
-    <div class="glitch" data-glitch="Electric dreams">Electric dreams</div>
+    <div class="glitch" id="projects-anchor" data-glitch="Electric dreams">Electric dreams</div>
     <div class="project-container">
         <div class="project-card">
             <div class="project-icon">
@@ -255,7 +256,7 @@
         </div>
     </div>
 </div>
-<footer>
+<footer id="contact-me">
     <!-- hitwebcounter Code START -->
     <div class="counter">
         <a href="https://www.hitwebcounter.com" target="_blank">
