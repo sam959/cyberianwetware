@@ -6,7 +6,6 @@ body {
 section {
     /*height: 500px; auto adjust to whatever we have in it*/
     border: ridge #4e5664;
-    overflow: scroll;
     background-image: -webkit-linear-gradient(92deg, #f38c02, #6c58cc);
 }
 
@@ -55,12 +54,15 @@ ul {
     list-style-type: none;
     width: 500px;
     font-size: 30px;
+    align-items: baseline;
     justify-content: space-around;
 }
 
 li {
     /* width: 200px; */
+    background-image: none;
     text-decoration: none;
+    font-size: 25px;
 }
 
 li:hover {
@@ -68,6 +70,7 @@ li:hover {
 }
 
 .todo {
+    background-image: none;
     text-decoration: none;
     color: yellow;
     font-family: "Roboto Mono", sans-serif;
@@ -148,17 +151,27 @@ a {
 
 
 .button {
-    font-size: 25px;
-    border-radius: 25px;
+    display: flex;
+    font-size: 20px;
     align-self: center;
+    background-image: none;
     background-color: #c9c8cd;
     text-align: center;
     font-weight: 400;
     padding: 10px;
     margin-top: 20px;
     position: relative;
-
+    border: 2px ridge #6161e1;
+    width: fit-content;
+    height:fit-content;;
+    cursor:pointer;
 }
+
+.butt:hover {
+    background-color: blue;
+    color:white;
+}
+
 
 .button:hover {
     background-color: rgba(175, 171, 255, 0.52);
@@ -169,7 +182,7 @@ a {
 }
 
 .button:active {
-    background-color: rgb(245, 22, 22);
+    background-color: rgb(67, 144, 236);
     color: #69d97f;
 }
 
@@ -418,6 +431,7 @@ a {
     section {
         display: flex;
         flex-wrap: wrap;
+        overflow: scroll;
     }
     .socials {
         display: flex;
