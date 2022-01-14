@@ -1,0 +1,106 @@
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    height: inherit;
+    width: inherit;
+    border: 3px solid #73AD21;
+}
+
+.square {
+    flex-basis: 150px;
+    background-color: #3c22a6;
+    opacity: 30%;
+    position: absolute;
+    margin: 25px;
+    text-align: center;
+    flex-shrink: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.sq {
+    flex-basis: 150px;
+    background-color: #3c22a6;
+    opacity: 30%;
+    margin: 25px;
+    text-align: center;
+    flex-shrink: 0;
+    transform-origin: left;
+    transition: all 2s;
+}
+.sq2 {
+    background-color: rgba(98, 239, 76, 0.52);
+    flex-grow: 1;
+    margin: 25px;
+}
+
+.square {
+    transition: transform 0.5s;
+}
+
+.square:hover {
+    transform: scale(1.5, 1);
+}
+
+
+.sq:hover {
+    flex: 0 0 500px;
+}
+
+.anim {
+    width: 25%;
+    position: absolute;
+    margin: 25px;
+    right: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.anim:nth-child(5n+0) {
+    background-color: red;
+    width: 10%;
+    right: 0;
+}
+
+.anim:nth-child(5n+1) {
+    background-color: blue;
+    width: 10%;
+    right: 100px;
+}
+
+.anim:nth-child(5n+2) {
+    background-color: green;
+    width: 10%;
+    right: 200px;
+
+}
+
+.anim:nth-child(5n+3) {
+    background-color: yellow;
+    width: 10%;
+    right: 200px;
+
+
+}
+
+.anim:nth-child(5n+4) {
+    background-color: purple;
+    width: 10%;
+    right: 200px;
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
