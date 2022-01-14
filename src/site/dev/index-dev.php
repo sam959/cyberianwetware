@@ -13,8 +13,8 @@
 <body>
 
 <div class="container">
-    <div class="sq">square</div>
-    <div class="sq2">test</div>
+    <p class="folding_square">square</p>
+    <p class="sq2">test</p>
 </div>
 <!--
 <div class="anim"></div>

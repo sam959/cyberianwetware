@@ -7,11 +7,14 @@
     border: 3px solid #73AD21;
 }
 
-.square {
+p {
+    position = absolute;
+}
+
+p.folding_square {
     flex-basis: 150px;
     background-color: #3c22a6;
     opacity: 30%;
-    position: absolute;
     margin: 25px;
     text-align: center;
     flex-shrink: 0;
@@ -20,34 +23,16 @@
     bottom: 0;
     left: 0;
     transform-origin: left;
-}
-
-.sq {
-    flex-basis: 150px;
-    background-color: #3c22a6;
-    opacity: 30%;
-    margin: 25px;
-    text-align: center;
-    flex-shrink: 0;
-    transform-origin: left;
     transition: all 2s;
 }
-.sq2 {
-    background-color: rgba(98, 239, 76, 0.52);
+
+p.sq2 {
+    background-color: rgba(200, 200, 76, 0.52);
     flex-grow: 1;
     margin: 25px;
 }
 
-.square {
-    transition: transform 0.5s;
-}
-
-.square:hover {
-    transform: scale(1.5, 1);
-}
-
-
-.sq:hover {
+p.folding_square:hover {
     flex: 0 0 500px;
 }
 
