@@ -14,7 +14,10 @@
 
 <div class="container">
     <p class="folding_square">square</p>
-    <p class="sq2">test</p>
+    <div class="content">
+        <p class="square_header">header</p>
+        <p class="sq2">test</p>
+    </div>
 </div>
 <!--
 <div class="anim"></div>
