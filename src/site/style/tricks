@@ -1,0 +1,9 @@
+To resize element on hover
+
+.square { transition: transform 0.5s; }
+.square:hover { transform: scale(0.95); }
+
+
+If two values are set; the first one is for the top-left and bottom-right corner, the second one for the top-right and bottom-left corner.
+
+border-radius: 50px 20px;
